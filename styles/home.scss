@@ -1,0 +1,70 @@
+/****************** Header Style */
+
+.header {
+  &__nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 1.5em 0;
+  }
+
+  // Logo
+  &__logo-img {
+    width: 80%;
+  }
+
+  // Middle Nav
+  &__middle-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__middle-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+  }
+
+  &__middle-nav-link {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 15.62px;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+
+  &__middle-nav-link:not(:last-child) {
+    margin-right: 4em;
+  }
+
+  // Right Nav
+  &__right-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 15.62px;
+    padding: 1.5em 3em;
+    color: #fff;
+    background-color: #000;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      color: #000;
+      background-color: #f2f2f2;
+    }
+  }
+}
