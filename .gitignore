@@ -32,3 +32,14 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+
+# Sketch
+*.sketch
+
+# XD and Figma
+*.xd
+*.fig
+
+# .DS_Store files
+.DS_Store
