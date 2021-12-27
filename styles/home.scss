@@ -1,5 +1,4 @@
 /****************** Header Style */
-
 .header {
   &__nav-bar {
     display: flex;
@@ -66,5 +65,252 @@
       color: #000;
       background-color: #f2f2f2;
     }
+  }
+}
+
+/****************** Main Section Style *******************/
+
+/****************** Top Section Style */
+.top-section {
+  &__top-wrapper {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 80vh;
+    background-color: #000;
+  }
+
+  // Colored Bar
+  &__colored-bar {
+    height: 50%;
+    width: 6px;
+    margin: auto 0;
+    background: rgb(255, 197, 147);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 197, 147, 1) 0%,
+      rgba(188, 113, 152, 1) 50%,
+      rgba(90, 119, 255, 1) 100%
+    );
+  }
+
+  // Top Info
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    grid-column: 3 / 7;
+    grid-row: 1 / 2;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  &__p {
+    font-size: 0.9375rem;
+    line-height: 1.5625em;
+    opacity: 0.6;
+    margin-bottom: 2.5em;
+    transform-style: preserve-3d;
+  }
+
+  a {
+    display: flex;
+
+    &:hover {
+      .top-section__right-arrow {
+        margin-left: 2em;
+      }
+
+      .top-section__button {
+        border-color: #f2f2f2;
+      }
+    }
+  }
+
+  &__right-arrow {
+    transition: all 0.2s ease-in-out;
+    margin-left: 1em;
+  }
+
+  &__button {
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    border-bottom: 1px solid transparent;
+  }
+
+  // Top Image
+  &__img {
+    background: url("../public/assets/home/desktop/create-and-share.jpg")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    grid-column: 10 / 21;
+    grid-row: 1 / 2;
+  }
+}
+
+/****************** Story Section Style */
+.story-section {
+  &__top-wrapper {
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: 80vh;
+    background-color: #fff;
+  }
+
+  // Story Info
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 15 / 20;
+    grid-row: 1 / 2;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  &__p {
+    font-size: 0.9375rem;
+    line-height: 1.5625em;
+    opacity: 0.6;
+    margin-bottom: 2.5em;
+    transform-style: preserve-3d;
+  }
+
+  a {
+    display: flex;
+
+    &:hover {
+      .story-section__right-arrow {
+        margin-left: 2em;
+      }
+
+      .story-section__button {
+        border-color: #000;
+      }
+    }
+  }
+
+  &__right-arrow {
+    transition: all 0.2s ease-in-out;
+    margin-left: 1em;
+  }
+
+  &__button {
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    border-bottom: 1px solid transparent;
+  }
+
+  // Story Image
+  &__img {
+    background: url("../public/assets/home/desktop/beautiful-stories.jpg")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+  }
+}
+
+/****************** Design Section Style */
+.design-section {
+  &__top-wrapper {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 80vh;
+    background-color: #fff;
+  }
+
+  // Design Info
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3 / 7;
+    grid-row: 1 / 2;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  &__p {
+    font-size: 0.9375rem;
+    line-height: 1.5625em;
+    opacity: 0.6;
+    margin-bottom: 2.5em;
+    transform-style: preserve-3d;
+  }
+
+  a {
+    display: flex;
+
+    &:hover {
+      .design-section__right-arrow {
+        margin-left: 2em;
+      }
+
+      .design-section__button {
+        border-color: #000;
+      }
+    }
+  }
+
+  &__right-arrow {
+    transition: all 0.2s ease-in-out;
+    margin-left: 1em;
+  }
+
+  &__button {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    border-bottom: 1px solid transparent;
+  }
+
+  // Design Image
+  &__img {
+    background: url("../public/assets/home/desktop/designed-for-everyone.jpg")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    grid-column: 10 / 21;
+    grid-row: 1 / 2;
   }
 }
