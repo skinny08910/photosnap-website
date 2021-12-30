@@ -32,7 +32,7 @@
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 15.62px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       opacity: 0.3;
@@ -40,7 +40,7 @@
   }
 
   &__middle-nav-link:not(:last-child) {
-    margin-right: 4em;
+    margin-right: 5em;
   }
 
   // Right Nav
@@ -59,11 +59,11 @@
     padding: 1.5em 3em;
     color: #fff;
     background-color: #000;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       color: #000;
-      background-color: #f2f2f2;
+      background-color: #dfdfdf;
     }
   }
 }
@@ -72,16 +72,16 @@
 
 /****************** Top Section Style */
 .top-section {
-  &__top-wrapper {
+  &__wrapper {
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: 80vh;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: 100vh;
     background-color: #000;
   }
 
   // Colored Bar
   &__colored-bar {
-    height: 50%;
+    height: 30%;
     width: 6px;
     margin: auto 0;
     background: rgb(255, 197, 147);
@@ -135,7 +135,9 @@
   }
 
   &__right-arrow {
-    transition: all 0.2s ease-in-out;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(177deg)
+      brightness(107%) contrast(102%);
+    transition: all 0.3s ease-in-out;
     margin-left: 1em;
   }
 
@@ -145,7 +147,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.4s;
+    transition: 0.3s;
     border-bottom: 1px solid transparent;
   }
 
@@ -157,26 +159,26 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    grid-column: 10 / 21;
+    grid-column: 9 / 19;
     grid-row: 1 / 2;
   }
 }
 
-/****************** Story Section Style */
-.story-section {
-  &__top-wrapper {
+/****************** Story Template Section Style */
+.story-template {
+  &__wrapper {
     display: grid;
     grid-template-columns: repeat(21, 1fr);
-    grid-template-rows: 80vh;
+    grid-template-rows: 100vh;
     background-color: #fff;
   }
 
-  // Story Info
+  // Story Template Info
   &__info {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-column: 15 / 20;
+    grid-column: 16 / 19;
     grid-row: 1 / 2;
   }
 
@@ -201,18 +203,18 @@
     display: flex;
 
     &:hover {
-      .story-section__right-arrow {
+      .story-template__right-arrow {
         margin-left: 2em;
       }
 
-      .story-section__button {
+      .story-template__button {
         border-color: #000;
       }
     }
   }
 
   &__right-arrow {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin-left: 1em;
   }
 
@@ -222,11 +224,11 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.4s;
+    transition: 0.3s;
     border-bottom: 1px solid transparent;
   }
 
-  // Story Image
+  // Story Template Image
   &__img {
     background: url("../public/assets/home/desktop/beautiful-stories.jpg")
       no-repeat center center;
@@ -241,10 +243,10 @@
 
 /****************** Design Section Style */
 .design-section {
-  &__top-wrapper {
+  &__wrapper {
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: 80vh;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: 100vh;
     background-color: #fff;
   }
 
@@ -289,7 +291,7 @@
   }
 
   &__right-arrow {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin-left: 1em;
   }
 
@@ -298,7 +300,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.4s;
+    transition: 0.3s;
     border-bottom: 1px solid transparent;
   }
 
@@ -310,7 +312,361 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    grid-column: 10 / 21;
+    grid-column: 9 / 19;
     grid-row: 1 / 2;
+  }
+}
+
+/****************** Story Section Style */
+.story-section {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 600px;
+    background-color: #fff;
+  }
+
+  // Story Item
+  &__item {
+    & a {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: translate3d(0, -40px, 0);
+
+        .story-section__border-bottom {
+          opacity: 1;
+        }
+      }
+
+      .story-section__item-wrapper {
+        margin-bottom: 3.5em;
+      }
+    }
+
+    // Item 1
+    &-1 {
+      display: block;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+          170deg,
+          rgba(0, 0, 0, 0) 20%,
+          rgba(0, 0, 0, 0.7) 100%
+        ),
+        url("../public/assets/stories/desktop/mountains.jpg") no-repeat center
+          center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 600px;
+    }
+
+    // Item 2
+    &-2 {
+      display: block;
+      background: linear-gradient(
+          170deg,
+          rgba(0, 0, 0, 0) 20%,
+          rgba(0, 0, 0, 0.7) 100%
+        ),
+        url("../public/assets/stories/desktop/cityscapes.jpg") no-repeat center
+          center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 600px;
+    }
+
+    // Item 3
+    &-3 {
+      display: block;
+      background: linear-gradient(
+          170deg,
+          rgba(0, 0, 0, 0) 20%,
+          rgba(0, 0, 0, 0.7) 100%
+        ),
+        url("../public/assets/stories/desktop/18-days-voyage.jpg") no-repeat
+          center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 600px;
+    }
+
+    // Item 4
+    &-4 {
+      display: block;
+      background: linear-gradient(
+          170deg,
+          rgba(0, 0, 0, 0) 20%,
+          rgba(0, 0, 0, 0.7) 100%
+        ),
+        url("../public/assets/stories/desktop/architecturals.jpg") no-repeat
+          center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 600px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5625em;
+    max-width: 1500px;
+    width: 80%;
+    margin: auto auto 0.2em auto;
+  }
+
+  &__name {
+    color: #fff;
+    font-size: 0.8125rem;
+    line-height: 1.0625em;
+    width: 80%;
+    margin: auto;
+  }
+
+  hr {
+    color: #fff;
+    max-width: 1500px;
+    width: 80%;
+    margin: 1.5em auto;
+    opacity: 0.25;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    width: 80%;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1em;
+    margin: auto;
+  }
+
+  &__right-arrow {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(177deg)
+      brightness(107%) contrast(102%);
+  }
+
+  // story border
+  &__border-bottom {
+    height: 6px;
+    width: 100%;
+    background: rgb(255, 197, 147);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 197, 147, 1) 0%,
+      rgba(188, 113, 152, 1) 50%,
+      rgba(90, 119, 255, 1) 100%
+    );
+    position: relative;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/****************** Features Section Style */
+.features-section {
+  padding: 10em 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // Features Item
+  &__item {
+    text-align: center;
+    width: 30%;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: auto auto 3em auto;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5625em;
+    margin-bottom: 1em;
+  }
+
+  &__p {
+    font-size: 0.9375rem;
+    line-height: 1.5625em;
+    opacity: 0.6;
+  }
+}
+
+/****************** Footer Style */
+
+.footer {
+  padding: 4em 0;
+  background-color: #000;
+
+  &__content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  //   Left Side
+  &__left-side {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin-bottom: 5em;
+  }
+
+  &__logo-img {
+    width: 80%;
+  }
+
+  &__social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__social-icon-1 {
+    &:hover {
+      fill: url(#a);
+    }
+  }
+
+  &__social-icon-2 {
+    &:hover {
+      fill: url(#b);
+    }
+  }
+
+  &__social-icon-3 {
+    &:hover {
+      fill: url(#c);
+    }
+  }
+
+  &__social-icon-4 {
+    &:hover {
+      fill: url(#d);
+    }
+  }
+
+  &__social-icon-5 {
+    &:hover {
+      fill: url(#e);
+    }
+  }
+
+  &__social-link:not(:last-child) {
+    margin-right: 1.7em;
+  }
+
+  // Middle Right Side
+  &__middle-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    color: #fff;
+  }
+
+  &__middle-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5em;
+  }
+
+  &__middle-nav-link {
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+
+  &__middle-nav-link:not(:last-child) {
+    margin-bottom: 2em;
+  }
+
+  // Right Side
+  &__right-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    a {
+      display: flex;
+      margin-bottom: 6em;
+
+      &:hover {
+        .footer__right-arrow {
+          margin-right: -1em;
+          margin-left: 1em;
+        }
+
+        .footer__button {
+          border-color: #fff;
+        }
+      }
+    }
+  }
+
+  &__button {
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    margin-right: 1em;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__right-arrow {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(177deg)
+      brightness(107%) contrast(102%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__copyright {
+    font-size: 0.9375rem;
+    line-height: 1.25em;
+    opacity: 0.5;
   }
 }
