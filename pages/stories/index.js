@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function Stories() {
   return (
     <div>
       <Head>
@@ -56,20 +56,18 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-
+            Stories
             <div className="header__middle-right">
               <div className="header__middle-nav">
-                <Link href="stories">
-                  <a className="header__middle-nav-link">Stories</a>
-                </Link>
-
-                <Link href="features">
-                  <a className="header__middle-nav-link">Features</a>
-                </Link>
-
-                <Link href="price">
-                  <a className="header__middle-nav-link">Pricing</a>
-                </Link>
+                <a href="#" className="header__middle-nav-link">
+                  Stories
+                </a>
+                <a href="#" className="header__middle-nav-link">
+                  Features
+                </a>
+                <a href="#" className="header__middle-nav-link">
+                  Pricing
+                </a>
               </div>
 
               <div className="header__right-nav">
@@ -460,15 +458,15 @@ export default function Home() {
                   <a className="footer__middle-nav-link">Home</a>
                 </Link>
 
-                <Link href="stories">
+                <Link href="Stories/Stories.js">
                   <a className="footer__middle-nav-link">Stories</a>
                 </Link>
 
-                <Link href="features">
+                <Link href="Features/Features.js">
                   <a className="footer__middle-nav-link">Features</a>
                 </Link>
 
-                <Link href="price">
+                <Link href="Price/Price.js">
                   <a className="footer__middle-nav-link">Pricing</a>
                 </Link>
               </div>
