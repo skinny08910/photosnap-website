@@ -94,7 +94,7 @@ export default function Stories() {
             <div className="top-story__info">
               <div className="top-story__info-wrapper">
                 <p className="top-story__featured">
-                  Last Month's Featured Story
+                  Last Month&apos;s Featured Story
                 </p>
 
                 <h1 className="top-story__title">
@@ -109,9 +109,10 @@ export default function Stories() {
 
                 <p className="top-story__p">
                   The dissected plateau area, while not actually made up of
-                  geological mountains, is popularly called "mountains,"
-                  especially in eastern Kentucky and West Virginia, and while
-                  the ridges are not high, the terrain is extremely rugged.
+                  geological mountains, is popularly called
+                  &ldquo;mountains,&ldquo; especially in eastern Kentucky and
+                  West Virginia, and while the ridges are not high, the terrain
+                  is extremely rugged.
                 </p>
 
                 <a href="#">
@@ -421,7 +422,9 @@ export default function Stories() {
               <a href="#" className="stories-section__item-15">
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">March 1st 2020</p>
-                  <h3 className="stories-section__title">Somwarpet's Beauty</h3>
+                  <h3 className="stories-section__title">
+                    Somwarpet&apos;s Beauty
+                  </h3>
                   <p className="stories-section__name">by Michelle</p>
                   <hr />
                   <div className="stories-section__button">
