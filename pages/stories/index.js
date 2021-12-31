@@ -29,14 +29,17 @@ export default function Stories() {
         {/* Meta Data */}
         <meta
           name="description"
-          content="Get the most out of PhotoSnap by submitting your beautiful photos, searching, and getting inspired by thousands of photos in our database."
+          content="Get the most out of PhotoSnap by submitting your story, search, and get inspired by thousands of photos with stories behing them in our database."
         />
         <meta
           name="keywords"
           content="PhotoSnap, photo, pictures, beautifull photo"
         />
         <meta name="author" content="Nicksonder Examar" />
-        <title>PhotoSnap - Post and get inspired from beautiful photos.</title>
+        <title>
+          Search through our libraries of stories, read their stories while you
+          look at the beautiful scenery.
+        </title>
       </Head>
 
       {/************* Header Section *****************/}
@@ -56,18 +59,20 @@ export default function Stories() {
                 </Link>
               </div>
             </div>
-            Stories
+
             <div className="header__middle-right">
               <div className="header__middle-nav">
-                <a href="#" className="header__middle-nav-link">
-                  Stories
-                </a>
-                <a href="#" className="header__middle-nav-link">
-                  Features
-                </a>
-                <a href="#" className="header__middle-nav-link">
-                  Pricing
-                </a>
+                <Link href="/stories">
+                  <a className="header__middle-nav-link">Stories</a>
+                </Link>
+
+                <Link href="/features">
+                  <a className="header__middle-nav-link">Features</a>
+                </Link>
+
+                <Link href="/price">
+                  <a className="header__middle-nav-link">Pricing</a>
+                </Link>
               </div>
 
               <div className="header__right-nav">
@@ -82,244 +87,373 @@ export default function Stories() {
 
       {/* Main Section *****************/}
       <main className="main">
-        {/* Top Section *****************/}
-        <section className="top-section">
-          <div className="top-section__container">
-            <div className="top-section__wrapper">
-              <div className="top-section__colored-bar"></div>
-              {/* Top Info */}
-              <div className="top-section__info">
-                <div className="top-section__info-wrapper">
-                  <h1 className="top-section__title">
-                    Create and Share Your Photo stories.
-                  </h1>
+        {/* Top Story *****************/}
+        <section className="top-story">
+          <div className="top-story__wrapper">
+            {/* Top Info */}
+            <div className="top-story__info">
+              <div className="top-story__info-wrapper">
+                <p className="top-story__featured">
+                  Last Month's Featured Story
+                </p>
 
-                  <p className="top-section__p">
-                    Photosnap is a platform for photographers and visual
-                    storytellers. We make it easy to share photos, tell stories
-                    and connect with others.
-                  </p>
-
-                  <a href="#">
-                    <div className="top-section__button">Get an Invite</div>
-                    <img
-                      className="top-section__right-arrow"
-                      src="assets/shared/desktop/arrow.svg"
-                      alt="Right Arrow"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              {/* Top Image */}
-              <div className="top-section__img"></div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stories Template Section *****************/}
-        <section className="story-template">
-          <div className="story-template__wrapper">
-            {/* Story Image */}
-            <div className="story-template__img"></div>
-
-            {/* Story Info */}
-            <div className="story-template__info">
-              <div className="story-template__info-wrapper">
-                <h1 className="story-template__title">
-                  Beautiful Stories Every time
+                <h1 className="top-story__title">
+                  Hazy Full Moon Of Appalachia
                 </h1>
 
-                <p className="story-template__p">
-                  We provide design templates to ensure your stories look
-                  terrific. Easily add photos, text, embed maps and media from
-                  other networks. Then share your story with everyone.
+                <p className="top-story__author">
+                  <span className="top-story__date">March 2nd 2020</span>
+
+                  <span className="top-story__name">by John Appleseed</span>
+                </p>
+
+                <p className="top-story__p">
+                  The dissected plateau area, while not actually made up of
+                  geological mountains, is popularly called "mountains,"
+                  especially in eastern Kentucky and West Virginia, and while
+                  the ridges are not high, the terrain is extremely rugged.
                 </p>
 
                 <a href="#">
-                  <div className="story-template__button">View The Stories</div>
+                  <div className="top-story__button">Read The Story</div>
                   <img
-                    className="story-template__right-arrow"
+                    className="top-story__right-arrow"
                     src="assets/shared/desktop/arrow.svg"
                     alt="Right Arrow"
                   />
                 </a>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Design Section *****************/}
-        <section className="design-section">
-          <div className="design-section__wrapper">
-            {/* Design Info */}
-            <div className="design-section__info">
-              <div className="design-section__info-wrapper">
-                <h1 className="design-section__title">Designed for everyone</h1>
-
-                <p className="design-section__p">
-                  Photosnap can help you create stories that resonate with your
-                  audience. Our tool is designed for photographers of all
-                  levels, brands, businesses you name it.
-                </p>
-
-                <a href="#">
-                  <div className="design-section__button">View The Stories</div>
-                  <img
-                    className="design-section__right-arrow"
-                    src="assets/shared/desktop/arrow.svg"
-                    alt="Right Arrow"
-                  />
-                </a>
-              </div>
-            </div>
-
-            {/* Design Image */}
-            <div className="design-section__img"></div>
           </div>
         </section>
 
         {/* Story Section *****************/}
-        <section className="story-section">
-          <div className="story-section__wrapper">
-            {/* First item */}
-            <div className="story-section__item">
-              <a href="#" className="story-section__item-1">
-                <div className="story-section__item-wrapper">
-                  <h3 className="story-section__title">The Mountains</h3>
-                  <p className="story-section__name">by John Appleseed</p>
+        <section className="stories-section">
+          <div className="stories-section__wrapper">
+            {/* Item 1 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-1">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">April 16th 2020</p>
+                  <h3 className="stories-section__title">The Mountains</h3>
+                  <p className="stories-section__name">by John Appleseed</p>
                   <hr />
-                  <div className="story-section__button">
+                  <div className="stories-section__button">
                     Read Story
                     <img
-                      className="story-section__right-arrow"
+                      className="stories-section__right-arrow"
                       src="assets/shared/desktop/arrow.svg"
                       alt="Right Arrow"
                     />
                   </div>
                 </div>
-                <div className="story-section__border-bottom"></div>
               </a>
             </div>
 
-            {/* Second item */}
-            <div className="story-section__item">
-              <a href="#" className="story-section__item-2">
-                <div className="story-section__item-wrapper">
-                  <h3 className="story-section__title">Sunset Cityscapes</h3>
-                  <p className="story-section__name">by Benjamin Cruz</p>
+            {/* Item 2 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-2">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">April 14th 2020</p>
+                  <h3 className="stories-section__title">Sunset Cityscapes</h3>
+                  <p className="stories-section__name">by Benjamin Cruz</p>
                   <hr />
-                  <div className="story-section__button">
+                  <div className="stories-section__button">
                     Read Story
                     <img
-                      className="story-section__right-arrow"
+                      className="stories-section__right-arrow"
                       src="assets/shared/desktop/arrow.svg"
                       alt="Right Arrow"
                     />
                   </div>
                 </div>
-                <div className="story-section__border-bottom"></div>
               </a>
             </div>
 
-            {/* Third item */}
-            <div className="story-section__item">
-              <a href="#" className="story-section__item-3">
-                <div className="story-section__item-wrapper">
-                  <h3 className="story-section__title">18 Days Voyage</h3>
-                  <p className="story-section__name">by Alexei Borodin</p>
+            {/* Item 3 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-3">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">April 11th 2020</p>
+                  <h3 className="stories-section__title">18 Days Voyage</h3>
+                  <p className="stories-section__name">by Alexei Borodin</p>
                   <hr />
-                  <div className="story-section__button">
+                  <div className="stories-section__button">
                     Read Story
                     <img
-                      className="story-section__right-arrow"
+                      className="stories-section__right-arrow"
                       src="assets/shared/desktop/arrow.svg"
                       alt="Right Arrow"
                     />
                   </div>
                 </div>
-                <div className="story-section__border-bottom"></div>
               </a>
             </div>
 
-            {/* Fourth item */}
-            <div className="story-section__item ">
-              <a href="#" className="story-section__item-4">
-                <div className="story-section__item-wrapper">
-                  <h3 className="story-section__title">Architecturals</h3>
-                  <p className="story-section__name">by Samantha Brooke</p>
+            {/* item 4 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-4">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">April 9th 2020</p>
+                  <h3 className="stories-section__title">Architecturals</h3>
+                  <p className="stories-section__name">by Samantha Brooke</p>
                   <hr />
-                  <div className="story-section__button">
+                  <div className="stories-section__button">
                     Read Story
                     <img
-                      className="story-section__right-arrow"
+                      className="stories-section__right-arrow"
                       src="assets/shared/desktop/arrow.svg"
                       alt="Right Arrow"
                     />
                   </div>
                 </div>
-                <div className="story-section__border-bottom"></div>
               </a>
             </div>
-          </div>
-        </section>
 
-        {/* Features Section *****************/}
-        <section className="features-section">
-          <div className="container">
-            <div className="features-section__wrapper">
-              {/* First item */}
-              <div className="features-section__item">
-                <div className="features-section__img">
-                  <img
-                    src="assets/features/desktop/responsive.svg"
-                    alt="Responsive icon"
-                  />
+            {/* item 5 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-5">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">April 7th 2020</p>
+                  <h3 className="stories-section__title">World Tour 2019</h3>
+                  <p className="stories-section__name">by Timothy Wagner</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
                 </div>
+              </a>
+            </div>
 
-                <h3 className="features-section__title">100% Responsive</h3>
-
-                <p className="features-section__p">
-                  No matter which the device you’re on, our site is fully
-                  responsive and stories look beautiful on any screen.
-                </p>
-              </div>
-
-              {/* Second item */}
-              <div className="features-section__item">
-                <div className="features-section__img">
-                  <img
-                    src="assets/features/desktop/no-limit.svg"
-                    alt="No limit icon"
-                  />
+            {/* item 6 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-6">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">April 3rd 2020</p>
+                  <h3 className="stories-section__title">Unforeseen Corners</h3>
+                  <p className="stories-section__name">by William Malcolm</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
                 </div>
+              </a>
+            </div>
 
-                <h3 className="features-section__title">
-                  No Photo Upload Limit
-                </h3>
-
-                <p className="features-section__p">
-                  Our tool has no limits on uploads or bandwidth. Freely upload
-                  in bulk and share all of your stories in one go.
-                </p>
-              </div>
-
-              {/* Third item */}
-              <div className="features-section__item">
-                <div className="features-section__img">
-                  <img
-                    src="assets/features/desktop/embed.svg"
-                    alt="Embed icon"
-                  />
+            {/* Item 7 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-7">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">March 29th 2020</p>
+                  <h3 className="stories-section__title">
+                    King Of Africa: Part II
+                  </h3>
+                  <p className="stories-section__name">by Tim Hillenburg</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
                 </div>
+              </a>
+            </div>
 
-                <h3 className="features-section__title">Available to Embed</h3>
+            {/* Item 8 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-8">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">March 21st 2020</p>
+                  <h3 className="stories-section__title">
+                    The Trip to Nowhere
+                  </h3>
+                  <p className="stories-section__name">by Felicia Rourke</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
 
-                <p className="features-section__p">
-                  Embed Tweets, Facebook posts, Instagram media, Vimeo or
-                  YouTube videos, Google Maps, and more.
-                </p>
-              </div>
+            {/* Item 9 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-9">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">March 19th 2020</p>
+                  <h3 className="stories-section__title">Rage of The Sea</h3>
+                  <p className="stories-section__name">by Mohammed Abdul</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {/* Item 10 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-10">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">March 16th 2020</p>
+                  <h3 className="stories-section__title">Running Free</h3>
+                  <p className="stories-section__name">by Michelle</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {/* Item 11 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-11">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">March 11th 2020</p>
+                  <h3 className="stories-section__title">Behind the Waves</h3>
+                  <p className="stories-section__name">by Lamarr Wilson</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {/* Item 12 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-12">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">March 9th 2020</p>
+                  <h3 className="stories-section__title">Calm Waters</h3>
+                  <p className="stories-section__name">by Samantha Brooke</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {/* Item 13 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-13">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">March 5th 2020</p>
+                  <h3 className="stories-section__title">The Milky Way</h3>
+                  <p className="stories-section__name">by Benjamin Cruz</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {/* Item 14 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-14">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">March 4th 2020</p>
+                  <h3 className="stories-section__title">
+                    Night at The Dark Forest
+                  </h3>
+                  <p className="stories-section__name">by Mohammed Abdul</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {/* Item 15 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-15">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">March 1st 2020</p>
+                  <h3 className="stories-section__title">Somwarpet's Beauty</h3>
+                  <p className="stories-section__name">by Michelle</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            {/* Item 16 */}
+            <div className="stories-section__item">
+              <a href="#" className="stories-section__item-16">
+                <div className="stories-section__item-wrapper">
+                  <p className="stories-section__date">February 25th 2020</p>
+                  <h3 className="stories-section__title">Land of Dreams</h3>
+                  <p className="stories-section__name">by William Malcolm</p>
+                  <hr />
+                  <div className="stories-section__button">
+                    Read Story
+                    <img
+                      className="stories-section__right-arrow"
+                      src="assets/shared/desktop/arrow.svg"
+                      alt="Right Arrow"
+                    />
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </section>
@@ -458,15 +592,15 @@ export default function Stories() {
                   <a className="footer__middle-nav-link">Home</a>
                 </Link>
 
-                <Link href="Stories/Stories.js">
+                <Link href="/stories">
                   <a className="footer__middle-nav-link">Stories</a>
                 </Link>
 
-                <Link href="Features/Features.js">
+                <Link href="/features">
                   <a className="footer__middle-nav-link">Features</a>
                 </Link>
 
-                <Link href="Price/Price.js">
+                <Link href="/price">
                   <a className="footer__middle-nav-link">Pricing</a>
                 </Link>
               </div>

@@ -1,87 +1,18 @@
-/****************** Header Style */
-.header {
-  &__nav-bar {
-    display: flex;
-    align-items: center;
-    padding: 1em 0;
-  }
-
-  // Logo
-  &__logo-img {
-    width: 80%;
-  }
-
-  // Middle Nav
-  &__middle-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  &__middle-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-  }
-
-  &__middle-nav-link {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    line-height: 15.62px;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      opacity: 0.3;
-    }
-  }
-
-  &__middle-nav-link:not(:last-child) {
-    margin-right: 5em;
-  }
-
-  // Right Nav
-  &__right-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  &__button {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    line-height: 15.62px;
-    padding: 1.5em 3em;
-    color: #fff;
-    background-color: #000;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      color: #000;
-      background-color: #dfdfdf;
-    }
-  }
-}
-
 /****************** Main Section Style *******************/
-
 /****************** Top Section Style */
 .top-section {
+  height: 80vh;
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(18, 1fr);
-    grid-template-rows: 100vh;
+    grid-template-rows: 80vh;
     background-color: #000;
   }
 
   // Colored Bar
   &__colored-bar {
-    height: 30%;
+    height: 40%;
     width: 6px;
     margin: auto 0;
     background: rgb(255, 197, 147);
@@ -166,10 +97,12 @@
 
 /****************** Story Template Section Style */
 .story-template {
+  height: 80vh;
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(21, 1fr);
-    grid-template-rows: 100vh;
+    grid-template-rows: 80vh;
     background-color: #fff;
   }
 
@@ -178,7 +111,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-column: 16 / 19;
+    grid-column: 16 / 20;
     grid-row: 1 / 2;
   }
 
@@ -236,17 +169,19 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    grid-column: 1 / 13;
+    grid-column: 1 / 14;
     grid-row: 1 / 2;
   }
 }
 
 /****************** Design Section Style */
 .design-section {
+  height: 80vh;
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(18, 1fr);
-    grid-template-rows: 100vh;
+    grid-template-rows: 80vh;
     background-color: #fff;
   }
 
@@ -335,7 +270,7 @@
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        transform: translate3d(0, -40px, 0);
+        transform: translate3d(0, -30px, 0);
 
         .story-section__border-bottom {
           opacity: 1;
@@ -520,153 +455,5 @@
     font-size: 0.9375rem;
     line-height: 1.5625em;
     opacity: 0.6;
-  }
-}
-
-/****************** Footer Style */
-
-.footer {
-  padding: 4em 0;
-  background-color: #000;
-
-  &__content-wrapper {
-    display: flex;
-    align-items: center;
-  }
-
-  //   Left Side
-  &__left-side {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__logo {
-    margin-bottom: 5em;
-  }
-
-  &__logo-img {
-    width: 80%;
-  }
-
-  &__social-icon {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &__social-icon-1 {
-    &:hover {
-      fill: url(#a);
-    }
-  }
-
-  &__social-icon-2 {
-    &:hover {
-      fill: url(#b);
-    }
-  }
-
-  &__social-icon-3 {
-    &:hover {
-      fill: url(#c);
-    }
-  }
-
-  &__social-icon-4 {
-    &:hover {
-      fill: url(#d);
-    }
-  }
-
-  &__social-icon-5 {
-    &:hover {
-      fill: url(#e);
-    }
-  }
-
-  &__social-link:not(:last-child) {
-    margin-right: 1.7em;
-  }
-
-  // Middle Right Side
-  &__middle-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    color: #fff;
-  }
-
-  &__middle-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 5em;
-  }
-
-  &__middle-nav-link {
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 1em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      opacity: 0.3;
-    }
-  }
-
-  &__middle-nav-link:not(:last-child) {
-    margin-bottom: 2em;
-  }
-
-  // Right Side
-  &__right-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    a {
-      display: flex;
-      margin-bottom: 6em;
-
-      &:hover {
-        .footer__right-arrow {
-          margin-right: -1em;
-          margin-left: 1em;
-        }
-
-        .footer__button {
-          border-color: #fff;
-        }
-      }
-    }
-  }
-
-  &__button {
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.3s;
-    margin-right: 1em;
-    border-bottom: 1px solid transparent;
-  }
-
-  &__right-arrow {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(177deg)
-      brightness(107%) contrast(102%);
-    transition: all 0.3s ease-in-out;
-  }
-
-  &__copyright {
-    font-size: 0.9375rem;
-    line-height: 1.25em;
-    opacity: 0.5;
   }
 }

@@ -29,7 +29,7 @@ export default function Home() {
         {/* Meta Data */}
         <meta
           name="description"
-          content="Get the most out of PhotoSnap by submitting your beautiful photos, searching, and getting inspired by thousands of photos in our database."
+          content="Get the most out of PhotoSnap by submitting your story, search, and get inspired by thousands of photos with stories behing them in our database."
         />
         <meta
           name="keywords"
@@ -59,15 +59,15 @@ export default function Home() {
 
             <div className="header__middle-right">
               <div className="header__middle-nav">
-                <Link href="stories">
+                <Link href="/stories">
                   <a className="header__middle-nav-link">Stories</a>
                 </Link>
 
-                <Link href="features">
+                <Link href="/features">
                   <a className="header__middle-nav-link">Features</a>
                 </Link>
 
-                <Link href="price">
+                <Link href="/price">
                   <a className="header__middle-nav-link">Pricing</a>
                 </Link>
               </div>
@@ -184,7 +184,7 @@ export default function Home() {
         {/* Story Section *****************/}
         <section className="story-section">
           <div className="story-section__wrapper">
-            {/* First item */}
+            {/* Item 1 */}
             <div className="story-section__item">
               <a href="#" className="story-section__item-1">
                 <div className="story-section__item-wrapper">
@@ -204,7 +204,7 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Second item */}
+            {/* Item 2 */}
             <div className="story-section__item">
               <a href="#" className="story-section__item-2">
                 <div className="story-section__item-wrapper">
@@ -224,7 +224,7 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Third item */}
+            {/* Item 3 */}
             <div className="story-section__item">
               <a href="#" className="story-section__item-3">
                 <div className="story-section__item-wrapper">
@@ -244,7 +244,7 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Fourth item */}
+            {/* Item 4 */}
             <div className="story-section__item ">
               <a href="#" className="story-section__item-4">
                 <div className="story-section__item-wrapper">
@@ -460,15 +460,15 @@ export default function Home() {
                   <a className="footer__middle-nav-link">Home</a>
                 </Link>
 
-                <Link href="stories">
+                <Link href="/stories">
                   <a className="footer__middle-nav-link">Stories</a>
                 </Link>
 
-                <Link href="features">
+                <Link href="/features">
                   <a className="footer__middle-nav-link">Features</a>
                 </Link>
 
-                <Link href="price">
+                <Link href="/price">
                   <a className="footer__middle-nav-link">Pricing</a>
                 </Link>
               </div>
