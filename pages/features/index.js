@@ -36,7 +36,10 @@ export default function Home() {
           content="PhotoSnap, photo, pictures, beautifull photo"
         />
         <meta name="author" content="Nicksonder Examar" />
-        <title>PhotoSnap - Post and get inspired from beautiful photos.</title>
+        <title>
+          We have features you need to make your stories easy to post and reach
+          as many hearts as you want.
+        </title>
       </Head>
 
       {/************* Header Section *****************/}
@@ -84,244 +87,168 @@ export default function Home() {
 
       {/* Main Section *****************/}
       <main className="main">
-        {/* Top Section *****************/}
-        <section className="top-section">
-          <div className="top-section__container">
-            <div className="top-section__wrapper">
-              <div className="top-section__colored-bar"></div>
-              {/* Top Info */}
-              <div className="top-section__info">
-                <div className="top-section__info-wrapper">
-                  <h1 className="top-section__title">
-                    Create and Share Your Photo stories.
-                  </h1>
+        {/* Features *****************/}
+        <section className="features">
+          <div className="features__container">
+            <div className="features__wrapper">
+              <div className="features__colored-bar"></div>
+              {/* Features Info */}
+              <div className="features__info">
+                <div className="features__info-wrapper">
+                  <h1 className="features__title">Features</h1>
 
-                  <p className="top-section__p">
-                    Photosnap is a platform for photographers and visual
-                    storytellers. We make it easy to share photos, tell stories
-                    and connect with others.
+                  <p className="features__p">
+                    We make sure all of our features are designed to be loved by
+                    every aspiring and even professional photograpers who wanted
+                    to share their stories.
                   </p>
-
-                  <a href="#">
-                    <div className="top-section__button">Get an Invite</div>
-                    <img
-                      className="top-section__right-arrow"
-                      src="assets/shared/desktop/arrow.svg"
-                      alt="Right Arrow"
-                    />
-                  </a>
                 </div>
               </div>
 
-              {/* Top Image */}
-              <div className="top-section__img"></div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stories Template Section *****************/}
-        <section className="story-template">
-          <div className="story-template__wrapper">
-            {/* Story Image */}
-            <div className="story-template__img"></div>
-
-            {/* Story Info */}
-            <div className="story-template__info">
-              <div className="story-template__info-wrapper">
-                <h1 className="story-template__title">
-                  Beautiful Stories Every time
-                </h1>
-
-                <p className="story-template__p">
-                  We provide design templates to ensure your stories look
-                  terrific. Easily add photos, text, embed maps and media from
-                  other networks. Then share your story with everyone.
-                </p>
-
-                <a href="#">
-                  <div className="story-template__button">View The Stories</div>
-                  <img
-                    className="story-template__right-arrow"
-                    src="assets/shared/desktop/arrow.svg"
-                    alt="Right Arrow"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Design Section *****************/}
-        <section className="design-section">
-          <div className="design-section__wrapper">
-            {/* Design Info */}
-            <div className="design-section__info">
-              <div className="design-section__info-wrapper">
-                <h1 className="design-section__title">Designed for everyone</h1>
-
-                <p className="design-section__p">
-                  Photosnap can help you create stories that resonate with your
-                  audience. Our tool is designed for photographers of all
-                  levels, brands, businesses you name it.
-                </p>
-
-                <a href="#">
-                  <div className="design-section__button">View The Stories</div>
-                  <img
-                    className="design-section__right-arrow"
-                    src="assets/shared/desktop/arrow.svg"
-                    alt="Right Arrow"
-                  />
-                </a>
-              </div>
-            </div>
-
-            {/* Design Image */}
-            <div className="design-section__img"></div>
-          </div>
-        </section>
-
-        {/* Story Section *****************/}
-        <section className="story-section">
-          <div className="story-section__wrapper">
-            {/* Item 1 */}
-            <div className="story-section__item">
-              <a href="#" className="story-section__item-1">
-                <div className="story-section__item-wrapper">
-                  <h3 className="story-section__title">The Mountains</h3>
-                  <p className="story-section__name">by John Appleseed</p>
-                  <hr />
-                  <div className="story-section__button">
-                    Read Story
-                    <img
-                      className="story-section__right-arrow"
-                      src="assets/shared/desktop/arrow.svg"
-                      alt="Right Arrow"
-                    />
-                  </div>
-                </div>
-                <div className="story-section__border-bottom"></div>
-              </a>
-            </div>
-
-            {/* Item 2 */}
-            <div className="story-section__item">
-              <a href="#" className="story-section__item-2">
-                <div className="story-section__item-wrapper">
-                  <h3 className="story-section__title">Sunset Cityscapes</h3>
-                  <p className="story-section__name">by Benjamin Cruz</p>
-                  <hr />
-                  <div className="story-section__button">
-                    Read Story
-                    <img
-                      className="story-section__right-arrow"
-                      src="assets/shared/desktop/arrow.svg"
-                      alt="Right Arrow"
-                    />
-                  </div>
-                </div>
-                <div className="story-section__border-bottom"></div>
-              </a>
-            </div>
-
-            {/* Item 3 */}
-            <div className="story-section__item">
-              <a href="#" className="story-section__item-3">
-                <div className="story-section__item-wrapper">
-                  <h3 className="story-section__title">18 Days Voyage</h3>
-                  <p className="story-section__name">by Alexei Borodin</p>
-                  <hr />
-                  <div className="story-section__button">
-                    Read Story
-                    <img
-                      className="story-section__right-arrow"
-                      src="assets/shared/desktop/arrow.svg"
-                      alt="Right Arrow"
-                    />
-                  </div>
-                </div>
-                <div className="story-section__border-bottom"></div>
-              </a>
-            </div>
-
-            {/* Item 4 */}
-            <div className="story-section__item ">
-              <a href="#" className="story-section__item-4">
-                <div className="story-section__item-wrapper">
-                  <h3 className="story-section__title">Architecturals</h3>
-                  <p className="story-section__name">by Samantha Brooke</p>
-                  <hr />
-                  <div className="story-section__button">
-                    Read Story
-                    <img
-                      className="story-section__right-arrow"
-                      src="assets/shared/desktop/arrow.svg"
-                      alt="Right Arrow"
-                    />
-                  </div>
-                </div>
-                <div className="story-section__border-bottom"></div>
-              </a>
+              {/* Features Image */}
+              <div className="features__img"></div>
             </div>
           </div>
         </section>
 
         {/* Features Section *****************/}
-        <section className="features-section">
+        <section className="features-page-section">
           <div className="container">
-            <div className="features-section__wrapper">
+            <div className="features-page-section__wrapper">
               {/* Item 1 */}
-              <div className="features-section__item">
-                <div className="features-section__img">
+              <div className="features-page-section__item">
+                <div className="features-page-section__img">
                   <img
                     src="assets/features/desktop/responsive.svg"
                     alt="Responsive icon"
                   />
                 </div>
 
-                <h3 className="features-section__title">100% Responsive</h3>
+                <h3 className="features-page-section__title">
+                  100% Responsive
+                </h3>
 
-                <p className="features-section__p">
+                <p className="features-page-section__p">
                   No matter which the device you’re on, our site is fully
                   responsive and stories look beautiful on any screen.
                 </p>
               </div>
 
               {/* Item 2 */}
-              <div className="features-section__item">
-                <div className="features-section__img">
+              <div className="features-page-section__item">
+                <div className="features-page-section__img">
                   <img
                     src="assets/features/desktop/no-limit.svg"
                     alt="No limit icon"
                   />
                 </div>
 
-                <h3 className="features-section__title">
+                <h3 className="features-page-section__title">
                   No Photo Upload Limit
                 </h3>
 
-                <p className="features-section__p">
+                <p className="features-page-section__p">
                   Our tool has no limits on uploads or bandwidth. Freely upload
                   in bulk and share all of your stories in one go.
                 </p>
               </div>
 
               {/* Item 3 */}
-              <div className="features-section__item">
-                <div className="features-section__img">
+              <div className="features-page-section__item">
+                <div className="features-page-section__img">
                   <img
                     src="assets/features/desktop/embed.svg"
                     alt="Embed icon"
                   />
                 </div>
 
-                <h3 className="features-section__title">Available to Embed</h3>
+                <h3 className="features-page-section__title">
+                  Available to Embed
+                </h3>
 
-                <p className="features-section__p">
+                <p className="features-page-section__p">
                   Embed Tweets, Facebook posts, Instagram media, Vimeo or
                   YouTube videos, Google Maps, and more.
                 </p>
               </div>
+
+              {/* Item 4 */}
+              <div className="features-page-section__item">
+                <div className="features-page-section__img">
+                  <img
+                    src="assets/features/desktop/custom-domain.svg"
+                    alt="Custom domain icon"
+                  />
+                </div>
+
+                <h3 className="features-page-section__title">Custom Domain</h3>
+
+                <p className="features-page-section__p">
+                  With Photosnap subscriptions you can host your stories on your
+                  own domain. You can also remove our branding!
+                </p>
+              </div>
+
+              {/* Item 5 */}
+              <div className="features-page-section__item">
+                <div className="features-page-section__img">
+                  <img
+                    src="assets/features/desktop/boost-exposure.svg"
+                    alt="Boost exposure icon"
+                  />
+                </div>
+
+                <h3 className="features-page-section__title">
+                  Boost Your Exposure
+                </h3>
+
+                <p className="features-page-section__p">
+                  Users that viewed your story or gallery can easily get notifed
+                  of new and featured stories with our built in mailing list.
+                </p>
+              </div>
+
+              {/* Item 6 */}
+              <div className="features-page-section__item">
+                <div className="features-page-section__img">
+                  <img
+                    src="assets/features/desktop/drag-drop.svg"
+                    alt="Drag and drop icon"
+                  />
+                </div>
+
+                <h3 className="features-page-section__title">
+                  Drag and Drop Image
+                </h3>
+
+                <p className="features-page-section__p">
+                  Easily drag and drop your image and get beautiful shots
+                  everytime. No over the top tooling to add friction to creating
+                  stories.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Beta Section *****************/}
+        <section className="beta">
+          <div className="beta__colored-bar"></div>
+          <div className="container">
+            <div className="beta__beta-button-wrapper">
+              <h3 className="beta__text">
+                We&apos;re in Beta. Get Your Invite Today!
+              </h3>
+
+              <a href="#">
+                <div className="beta__button">Get An Invite</div>
+
+                <img
+                  className="beta__right-arrow"
+                  src="assets/shared/desktop/arrow.svg"
+                  alt="Right Arrow"
+                />
+              </a>
             </div>
           </div>
         </section>

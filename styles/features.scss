@@ -1,0 +1,193 @@
+/****************** Main Section Style *******************/
+/****************** Top Section Style */
+.features {
+  height: 70vh;
+  position: relative;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: 70vh;
+    background-color: #000;
+  }
+
+  // Colored Bar
+  &__colored-bar {
+    height: 22%;
+    width: 6px;
+    margin: auto 0;
+    background: rgb(255, 197, 147);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 197, 147, 1) 0%,
+      rgba(188, 113, 152, 1) 50%,
+      rgba(90, 119, 255, 1) 100%
+    );
+    position: absolute;
+    top: 37%;
+  }
+
+  // Features Info
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    grid-column: 3 / 7;
+    grid-row: 1 / 2;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  &__p {
+    font-size: 0.9375rem;
+    line-height: 1.5625em;
+    opacity: 0.6;
+    margin-bottom: 2.5em;
+    transform-style: preserve-3d;
+  }
+
+  // Features Image
+  &__img {
+    background: url("../public/assets/features/desktop/hero.jpg") no-repeat
+      center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    grid-column: 9 / 19;
+    grid-row: 1 / 2;
+  }
+}
+
+/****************** Features Section Style */
+.features-page-section {
+  padding: 10em 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    gap: 30px;
+  }
+
+  // Features Item
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: auto auto 3em auto;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5625em;
+    margin-bottom: 1em;
+  }
+
+  &__p {
+    font-size: 0.9375rem;
+    line-height: 1.5625em;
+    opacity: 0.6;
+  }
+}
+
+/****************** Beta Section Style */
+.beta {
+  height: 300px;
+  background: linear-gradient(
+      170deg,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../public/assets/shared/desktop/bg-beta.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+
+  &__colored-bar {
+    height: 100%;
+    width: 6px;
+    margin: auto 0;
+    background: rgb(255, 197, 147);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 197, 147, 1) 0%,
+      rgba(188, 113, 152, 1) 50%,
+      rgba(90, 119, 255, 1) 100%
+    );
+    position: absolute;
+  }
+
+  &__beta-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    width: 50%;
+  }
+
+  a {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    &:hover {
+      .beta__right-arrow {
+        margin-right: -1em;
+        margin-left: 1em;
+      }
+
+      .beta__button {
+        border-color: #fff;
+      }
+    }
+  }
+
+  &__button {
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    margin-right: 1em;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__right-arrow {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(177deg)
+      brightness(107%) contrast(102%);
+    transition: all 0.3s ease-in-out;
+  }
+}
