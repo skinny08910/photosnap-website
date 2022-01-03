@@ -37,8 +37,8 @@ export default function Stories() {
         />
         <meta name="author" content="Nicksonder Examar" />
         <title>
-          Search through our libraries of stories, read their stories while you
-          look at the beautiful scenery.
+          Stories - Search through our libraries of stories, read their stories
+          while you look at the beautiful scenery.
         </title>
       </Head>
 
@@ -70,7 +70,7 @@ export default function Stories() {
                   <a className="header__middle-nav-link">Features</a>
                 </Link>
 
-                <Link href="/price">
+                <Link href="/pricing">
                   <a className="header__middle-nav-link">Pricing</a>
                 </Link>
               </div>
@@ -603,7 +603,7 @@ export default function Stories() {
                   <a className="footer__middle-nav-link">Features</a>
                 </Link>
 
-                <Link href="/price">
+                <Link href="/pricing">
                   <a className="footer__middle-nav-link">Pricing</a>
                 </Link>
               </div>

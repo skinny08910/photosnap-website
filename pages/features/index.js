@@ -37,8 +37,8 @@ export default function Home() {
         />
         <meta name="author" content="Nicksonder Examar" />
         <title>
-          We have features you need to make your stories easy to post and reach
-          as many hearts as you want.
+          Features - We have features you need to make your stories easy to post
+          and reach as many hearts as you want.
         </title>
       </Head>
 
@@ -70,7 +70,7 @@ export default function Home() {
                   <a className="header__middle-nav-link">Features</a>
                 </Link>
 
-                <Link href="/price">
+                <Link href="/pricing">
                   <a className="header__middle-nav-link">Pricing</a>
                 </Link>
               </div>
@@ -395,7 +395,7 @@ export default function Home() {
                   <a className="footer__middle-nav-link">Features</a>
                 </Link>
 
-                <Link href="/price">
+                <Link href="/pricing">
                   <a className="footer__middle-nav-link">Pricing</a>
                 </Link>
               </div>

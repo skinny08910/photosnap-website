@@ -36,7 +36,9 @@ export default function Home() {
           content="PhotoSnap, photo, pictures, beautifull photo"
         />
         <meta name="author" content="Nicksonder Examar" />
-        <title>PhotoSnap - Post and get inspired from beautiful photos.</title>
+        <title>
+          PhotoSnap - Post and get inspired from stories with beautiful photos.
+        </title>
       </Head>
 
       {/************* Header Section *****************/}
@@ -67,7 +69,7 @@ export default function Home() {
                   <a className="header__middle-nav-link">Features</a>
                 </Link>
 
-                <Link href="/price">
+                <Link href="/pricing">
                   <a className="header__middle-nav-link">Pricing</a>
                 </Link>
               </div>
@@ -468,7 +470,7 @@ export default function Home() {
                   <a className="footer__middle-nav-link">Features</a>
                 </Link>
 
-                <Link href="/price">
+                <Link href="/pricing">
                   <a className="footer__middle-nav-link">Pricing</a>
                 </Link>
               </div>

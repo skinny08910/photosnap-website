@@ -1,0 +1,391 @@
+/****************** Main Section Style *******************/
+/****************** Pricing Section Style */
+.pricing {
+  height: 70vh;
+  position: relative;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: 70vh;
+    background-color: #000;
+  }
+
+  // Colored Bar
+  &__colored-bar {
+    height: 22%;
+    width: 6px;
+    margin: auto 0;
+    background: rgb(255, 197, 147);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 197, 147, 1) 0%,
+      rgba(188, 113, 152, 1) 50%,
+      rgba(90, 119, 255, 1) 100%
+    );
+    position: absolute;
+    top: 37%;
+  }
+
+  // Pricing Info
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    grid-column: 3 / 7;
+    grid-row: 1 / 2;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  &__p {
+    font-size: 0.9375rem;
+    line-height: 1.5625em;
+    opacity: 0.6;
+    margin-bottom: 2.5em;
+    transform-style: preserve-3d;
+  }
+
+  // Pricing Image
+  &__img {
+    background: url("../public/assets/pricing/desktop/hero.jpg") no-repeat
+      center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    grid-column: 9 / 19;
+    grid-row: 1 / 2;
+  }
+}
+
+/****************** Pricing Plan Section Style */
+.pricing-plan {
+  padding: 10em 0 5em 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Plan Picker
+  &__plan-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 3em auto;
+    width: 20%;
+
+    &.active {
+      .pricing-plan__switcher {
+        background: #000;
+      }
+
+      .pricing-plan__black-ball {
+        transform: translate3d(31px, 0, 0);
+        background: #fff;
+      }
+
+      .pricing-plan__monthly {
+        opacity: 0.5;
+      }
+
+      .pricing-plan__yearly {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__switcher {
+    height: 30px;
+    width: 60px;
+    border-radius: 100px;
+    background: #dfdfdf;
+    margin: 0 1em;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &__black-ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.4s ease-in-out;
+  }
+
+  &__monthly {
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5625em;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__yearly {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5625em;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+  }
+
+  // Items
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f5f5f5;
+    padding: 1em 4em;
+    height: 400px;
+  }
+
+  &__item--black {
+    color: #fff;
+    height: 490px;
+    background: #000;
+    position: relative;
+
+    .pricing-plan__colored-bar {
+      height: 6px;
+      width: 100%;
+      background: rgb(255, 197, 147);
+      background: linear-gradient(
+        135deg,
+        rgba(255, 197, 147, 1) 0%,
+        rgba(188, 113, 152, 1) 50%,
+        rgba(90, 119, 255, 1) 100%
+      );
+      position: absolute;
+      top: 0;
+    }
+
+    .pricing-plan__button {
+      color: #000;
+      background: #fff;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #000;
+        background: #dfdfdf;
+      }
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 5em;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5625em;
+    margin-bottom: 1em;
+  }
+
+  &__p {
+    font-size: 0.9375rem;
+    line-height: 1.5625em;
+    opacity: 0.6;
+    margin-bottom: 1.5em;
+  }
+
+  &__amount {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 4.16667px;
+    margin-bottom: 0.2em;
+  }
+
+  &__date {
+    display: block;
+    font-size: 0.9375rem;
+    line-height: 1.5625em;
+    opacity: 0.6;
+  }
+
+  &__button {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 1.5em 0;
+    width: 100%;
+    text-transform: uppercase;
+    background: #000;
+    margin-top: 3.5em;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #000;
+      background: #dfdfdf;
+    }
+  }
+}
+
+/****************** Comparison Section Style */
+.comparison {
+  padding: 5em 0 10em 0;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: 2em 1.5em;
+  }
+
+  &__item:first-child {
+    border-bottom: 1px solid #000000;
+  }
+
+  &__item:not(:first-child) {
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  &__name {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 30%;
+  }
+
+  &__plan-wrapper {
+    display: inline-block;
+    text-align: right;
+    width: 70%;
+    margin-left: auto;
+
+    .comparison__text {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      line-height: 1em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .comparison__text:not(:first-child) {
+      margin-left: 12.5em;
+    }
+
+    .comparison__check-mark {
+      margin-right: 2.4em;
+    }
+  }
+}
+
+/****************** Beta Section Style */
+.beta {
+  height: 300px;
+  background: linear-gradient(
+      170deg,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../public/assets/shared/desktop/bg-beta.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+
+  &__colored-bar {
+    height: 100%;
+    width: 6px;
+    margin: auto 0;
+    background: rgb(255, 197, 147);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 197, 147, 1) 0%,
+      rgba(188, 113, 152, 1) 50%,
+      rgba(90, 119, 255, 1) 100%
+    );
+    position: absolute;
+  }
+
+  &__beta-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    width: 50%;
+  }
+
+  a {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    &:hover {
+      .beta__right-arrow {
+        margin-right: -1em;
+        margin-left: 1em;
+      }
+
+      .beta__button {
+        border-color: #fff;
+      }
+    }
+  }
+
+  &__button {
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    margin-right: 1em;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__right-arrow {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(177deg)
+      brightness(107%) contrast(102%);
+    transition: all 0.3s ease-in-out;
+  }
+}
