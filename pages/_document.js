@@ -11,19 +11,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', 'GOOGLE_ANALYTICS_ID', 'auto');
-          ga('send', 'pageview');
-        `}
-          </Script>
-          <Script
-            src="https://www.google-analytics.com/analytics.js"
-            strategy="afterInteractive"
-          />
-
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
@@ -34,6 +21,24 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
             rel="stylesheet"
           ></link>
+
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
         </Head>
         <body>
           <Main />
