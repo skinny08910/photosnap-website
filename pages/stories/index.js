@@ -25,7 +25,6 @@ export default function Stories() {
           href="favicon//favicon-16x16.png"
         />
         <link rel="manifest" href="favicon/site.webmanifest" />
-
         {/* Meta Data */}
         <meta
           name="description"
