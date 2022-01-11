@@ -5,6 +5,10 @@
 
 /***************************** Global Style */
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,6 +35,11 @@ a {
 
 /****************** Header Style */
 .header {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 20;
+
   &__nav-bar {
     display: flex;
     align-items: center;
@@ -91,6 +100,129 @@ a {
     color: #fff;
     background-color: #000;
     transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #000;
+      background-color: #dfdfdf;
+    }
+  }
+
+  // Hamburger Menu
+  &__hamburder {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: auto;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+
+    // Hamburger Animation
+    &.active .header__line {
+      transform: rotate(45deg);
+    }
+
+    &.active .header__line::after {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__line {
+    width: 30px;
+    height: 2px;
+    background: #000;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    margin-top: -5px;
+  }
+
+  &__line::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #000;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    transform: translateY(6px);
+  }
+}
+
+/****************** Mobile Menu */
+
+.mobile-bg {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    170deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  position: absolute;
+  z-index: 10;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  background: #fff;
+  height: 50%;
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+  z-index: 10;
+  transform: translate3d(0, -200%, 0);
+
+  &.active {
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__link {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  // &__link:first-child {
+  //   margin-top: 7em;
+  // }
+
+  &__link:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+
+  &__mobile-hr {
+    width: 90%;
+    background: #000;
+    opacity: 0.25;
+    margin-bottom: 3em;
+  }
+
+  &__mobile-button {
+    display: flex;
+    width: 90%;
+    margin-bottom: 2em;
+  }
+
+  &__button {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 15.62px;
+    padding: 1.5em 3em;
+    color: #fff;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
 
     &:hover {
       color: #000;
@@ -243,5 +375,151 @@ a {
     font-size: 0.9375rem;
     line-height: 1.25em;
     opacity: 0.5;
+  }
+}
+
+/******************************** Media Queries ********************************/
+/* Phone ********************************/
+@media only screen and (max-width: 700px) {
+  // General
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /******** Header */
+  .header {
+    &__nav-bar {
+      padding: 1.5em 0;
+    }
+
+    &__logo-img {
+      width: 100%;
+    }
+
+    &__middle-right {
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &__middle-nav {
+      display: none;
+    }
+
+    &__right-nav {
+      display: none;
+    }
+
+    // Hamburger Menu
+    &__hamburder {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      width: 20%;
+    }
+  }
+
+  // Mobile Menu
+  // .mobile-bg {
+  //   display: block;
+  // }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  /******** Footer */
+  .footer {
+    &__content-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__left-side {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 5em;
+    }
+
+    &__logo {
+      width: 40%;
+      margin: auto auto 5em auto;
+    }
+
+    &__middle-right {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+
+    &__middle-nav {
+      margin: 0 0 5em 0;
+      text-align: center;
+    }
+
+    &__right-nav {
+      align-items: center;
+    }
+  }
+}
+
+/* Small Screen ********************************/
+@media only screen and (max-width: 400px) {
+  // General
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  // Header
+  .header {
+    &__nav-bar {
+      padding: 1.5em 0;
+    }
+
+    &__logo-img {
+      width: 100%;
+    }
+
+    &__middle-right {
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &__middle-nav {
+      display: none;
+    }
+
+    &__right-nav {
+      display: none;
+    }
+
+    // Hamburger Menu
+    &__hamburder {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      width: 20%;
+    }
+  }
+
+  // Mobile Menu
+  // .mobile-bg {
+  //   display: block;
+  //   height: 2000px;
+  // }
+
+  .mobile-menu {
+    display: flex;
+    height: 20%;
+  }
+
+  /******** Footer */
+  .footer {
+    &__logo {
+      width: 70%;
+    }
   }
 }

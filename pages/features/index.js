@@ -80,10 +80,37 @@ export default function Home() {
                   Get An Invite
                 </a>
               </div>
+
+              <div className="header__hamburder">
+                <div className="header__line"></div>
+              </div>
             </div>
           </nav>
         </div>
       </header>
+
+      {/* Mobile Menu *****************/}
+      <div className="mobile-menu">
+        <Link href="/stories">
+          <a className="mobile-menu__link">Stories</a>
+        </Link>
+
+        <Link href="/features">
+          <a className="mobile-menu__link">Features</a>
+        </Link>
+
+        <Link href="/pricing">
+          <a className="mobile-menu__link">Pricing</a>
+        </Link>
+
+        <hr className="mobile-menu__mobile-hr" />
+
+        <div className="mobile-menu__mobile-button">
+          <a href="#" className="mobile-menu__button">
+            Get An Invite
+          </a>
+        </div>
+      </div>
 
       {/* Main Section *****************/}
       <main className="main">

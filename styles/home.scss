@@ -11,7 +11,8 @@
   }
 
   // Colored Bar
-  &__colored-bar {
+  &__colored-bar,
+  &__colored-bar-img {
     height: 40%;
     width: 6px;
     margin: auto 0;
@@ -22,6 +23,10 @@
       rgba(188, 113, 152, 1) 50%,
       rgba(90, 119, 255, 1) 100%
     );
+  }
+
+  &__colored-bar-img {
+    display: none;
   }
 
   // Top Info
@@ -455,5 +460,204 @@
     font-size: 0.9375rem;
     line-height: 1.5625em;
     opacity: 0.6;
+  }
+}
+
+/******************************** Media Queries ********************************/
+/* Phone ********************************/
+@media only screen and (max-width: 700px) {
+  /******** Top Section */
+  .top-section {
+    height: 1200px;
+    padding-top: 4em;
+
+    &__colored-bar {
+      display: none;
+    }
+
+    &__colored-bar-img {
+      display: block;
+      position: absolute;
+      bottom: -1%;
+      left: 5%;
+      width: 40%;
+      height: 6px;
+      z-index: 10;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 1200px;
+    }
+
+    &__info {
+      order: 2;
+      height: 60%;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    a:hover {
+      .top-section__button {
+        border-bottom: 1px solid transparent;
+      }
+
+      .top-section__right-arrow {
+        margin-left: 1em;
+      }
+    }
+
+    &__title {
+      font-size: 2rem;
+      letter-spacing: 3.33333px;
+    }
+
+    &__p {
+      font-size: 0.9375rem;
+      line-height: 1.5625em;
+    }
+
+    &__img {
+      order: 1;
+      height: 40%;
+      position: relative;
+    }
+  }
+
+  /******** Story Template Section */
+  .story-template {
+    height: 1200px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      height: inherit;
+    }
+
+    &__info {
+      order: 2;
+      height: 50%;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    a:hover {
+      .story-template__button {
+        border-bottom: 1px solid transparent;
+      }
+
+      .story-template__right-arrow {
+        margin-left: 1em;
+      }
+    }
+
+    &__title {
+      font-size: 2rem;
+      letter-spacing: 3.33333px;
+    }
+
+    &__p {
+      font-size: 0.9375rem;
+      line-height: 1.5625em;
+    }
+
+    &__img {
+      order: 1;
+      height: 50%;
+      position: relative;
+    }
+  }
+
+  /******** Design Section */
+  .design-section {
+    height: 1200px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 1200px;
+    }
+
+    &__info {
+      order: 2;
+      height: 50%;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    a:hover {
+      .design-section__button {
+        border-bottom: 1px solid transparent;
+      }
+
+      .design-section__right-arrow {
+        margin-left: 1em;
+      }
+    }
+
+    &__title {
+      font-size: 2rem;
+      letter-spacing: 3.33333px;
+    }
+
+    &__p {
+      font-size: 0.9375rem;
+      line-height: 1.5625em;
+    }
+
+    &__img {
+      order: 1;
+      height: 50%;
+      position: relative;
+    }
+  }
+
+  /******** Story Section */
+  .story-section {
+    height: 2400px;
+
+    &__wrapper {
+      grid-template-columns: 1fr;
+      height: 100vh;
+    }
+
+    &__item a:hover {
+      transform: translate3d(0, 0, 0);
+
+      .story-section__border-bottom {
+        display: none;
+      }
+    }
+  }
+
+  /******** Features Section */
+  .features-section {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__img {
+      width: 90px;
+      height: 90px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 6em;
+    }
   }
 }
