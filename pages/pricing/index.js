@@ -176,7 +176,24 @@ export default function Pricing() {
               </div>
 
               {/* Pricing Image */}
-              <div className="pricing__img"></div>
+              <div className="pricing__img">
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/pricing/mobile/hero.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/pricing/tablet/hero.jpg"
+                  />
+
+                  <img
+                    src="assets/pricing/desktop/hero.jpg"
+                    alt="Man looking through a camera lens."
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </section>
@@ -437,6 +454,23 @@ export default function Pricing() {
 
         {/* Beta Section *****************/}
         <section className="beta">
+          <picture>
+            <source
+              media="(max-width:700px)"
+              srcSet="assets/shared/desktop/bg-beta.jpg"
+            />
+
+            <source
+              media="(max-width:900px)"
+              srcSet="assets/shared/desktop/bg-beta.jpg"
+            />
+
+            <img
+              src="assets/shared/desktop/bg-beta.jpg"
+              alt="Image of brown cloud."
+            />
+          </picture>
+
           <div className="beta__colored-bar"></div>
           <div className="container">
             <div className="beta__beta-button-wrapper">

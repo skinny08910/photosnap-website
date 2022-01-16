@@ -133,7 +133,24 @@ export default function Home() {
               </div>
 
               {/* Features Image */}
-              <div className="features__img"></div>
+              <div className="features__img">
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/features/mobile/hero.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/features/tablet/hero.jpg"
+                  />
+
+                  <img
+                    src="assets/features/desktop/hero.jpg"
+                    alt="Man holding a camera by its side."
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </section>
@@ -260,6 +277,23 @@ export default function Home() {
 
         {/* Beta Section *****************/}
         <section className="beta">
+          <picture>
+            <source
+              media="(max-width:700px)"
+              srcSet="assets/shared/desktop/bg-beta.jpg"
+            />
+
+            <source
+              media="(max-width:900px)"
+              srcSet="assets/shared/desktop/bg-beta.jpg"
+            />
+
+            <img
+              src="assets/shared/desktop/bg-beta.jpg"
+              alt="Image of brown cloud."
+            />
+          </picture>
+
           <div className="beta__colored-bar"></div>
           <div className="container">
             <div className="beta__beta-button-wrapper">

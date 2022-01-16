@@ -116,6 +116,23 @@ export default function Stories() {
       <main className="main">
         {/* Top Story *****************/}
         <section className="top-story">
+          <picture>
+            <source
+              media="(max-width:700px)"
+              srcSet="assets/stories/mobile/moon-of-appalacia.jpg"
+            />
+
+            <source
+              media="(max-width:900px)"
+              srcSet="assets/stories/tablet/moon-of-appalacia.jpg"
+            />
+
+            <img
+              src="assets/stories/desktop/moon-of-appalacia.jpg"
+              alt="Beautiful mountain side sunrise."
+            />
+          </picture>
+
           <div className="top-story__wrapper">
             {/* Top Info */}
             <div className="top-story__info">
@@ -160,7 +177,29 @@ export default function Stories() {
           <div className="stories-section__wrapper">
             {/* Item 1 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-1">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/mountains.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/mountains.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/mountains.jpg"
+                    alt="Mountain View."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">April 16th 2020</p>
                   <h3 className="stories-section__title">The Mountains</h3>
@@ -180,7 +219,29 @@ export default function Stories() {
 
             {/* Item 2 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-2">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/cityscapes.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/cityscapes.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/cityscapes.jpg"
+                    alt="A view of beautiful city."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">April 14th 2020</p>
                   <h3 className="stories-section__title">Sunset Cityscapes</h3>
@@ -200,7 +261,28 @@ export default function Stories() {
 
             {/* Item 3 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-3">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/18-days-voyage.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/18-days-voyage.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/18-days-voyage.jpg"
+                    alt="Man hitch-hiking."
+                  />
+                </picture>
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">April 11th 2020</p>
                   <h3 className="stories-section__title">18 Days Voyage</h3>
@@ -220,7 +302,29 @@ export default function Stories() {
 
             {/* item 4 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-4">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/architecturalse.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/architecturals.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/architecturals.jpg"
+                    alt="A beautiful architectural building."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">April 9th 2020</p>
                   <h3 className="stories-section__title">Architecturals</h3>
@@ -240,7 +344,29 @@ export default function Stories() {
 
             {/* item 5 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-5">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/world-tour.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/world-tour.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/world-tour.jpg"
+                    alt="Beautiful lake view near mountain."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">April 7th 2020</p>
                   <h3 className="stories-section__title">World Tour 2019</h3>
@@ -260,7 +386,29 @@ export default function Stories() {
 
             {/* item 6 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-6">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/unforeseen-corners.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/unforeseen-corners.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/unforeseen-corners.jpg"
+                    alt="A tree near water."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">April 3rd 2020</p>
                   <h3 className="stories-section__title">Unforeseen Corners</h3>
@@ -280,7 +428,29 @@ export default function Stories() {
 
             {/* Item 7 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-7">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/king-on-africa.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/king-on-africa.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/king-on-africa.jpg"
+                    alt="Image of a lion."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">March 29th 2020</p>
                   <h3 className="stories-section__title">
@@ -302,7 +472,29 @@ export default function Stories() {
 
             {/* Item 8 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-8">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/trip-to-nowhere.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/trip-to-nowhere.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/trip-to-nowhere.jpg"
+                    alt="Image of a tree near a lake."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">March 21st 2020</p>
                   <h3 className="stories-section__title">
@@ -324,7 +516,29 @@ export default function Stories() {
 
             {/* Item 9 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-9">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/rage-of-the-sea.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/rage-of-the-sea.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/rage-of-the-sea.jpg"
+                    alt="Waves on water with sunset in the background."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">March 19th 2020</p>
                   <h3 className="stories-section__title">Rage of The Sea</h3>
@@ -344,7 +558,29 @@ export default function Stories() {
 
             {/* Item 10 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-10">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/running-free.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/running-free.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/running-free.jpg"
+                    alt="Horses running free."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">March 16th 2020</p>
                   <h3 className="stories-section__title">Running Free</h3>
@@ -364,7 +600,29 @@ export default function Stories() {
 
             {/* Item 11 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-11">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/behind-the-waves.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/behind-the-waves.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/behind-the-waves.jpg"
+                    alt="Heavy waves on the ocean."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">March 11th 2020</p>
                   <h3 className="stories-section__title">Behind the Waves</h3>
@@ -384,7 +642,29 @@ export default function Stories() {
 
             {/* Item 12 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-12">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/calm-waters.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/calm-waters.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/calm-waters.jpg"
+                    alt="Image of lake with beautiful mountains in the background."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">March 9th 2020</p>
                   <h3 className="stories-section__title">Calm Waters</h3>
@@ -404,7 +684,29 @@ export default function Stories() {
 
             {/* Item 13 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-13">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/milky-way.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/milky-way.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/milky-way.jpg"
+                    alt="Image of the night sky."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">March 5th 2020</p>
                   <h3 className="stories-section__title">The Milky Way</h3>
@@ -424,7 +726,29 @@ export default function Stories() {
 
             {/* Item 14 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-14">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/dark-forest.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/dark-forest.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/dark-forest.jpg"
+                    alt="Snowy mountains."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">March 4th 2020</p>
                   <h3 className="stories-section__title">
@@ -446,7 +770,29 @@ export default function Stories() {
 
             {/* Item 15 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-15">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/somwarpet.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/somwarpet.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/somwarpet.jpg"
+                    alt="Image of Somwarpet, a beautiful yellow flower."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">March 1st 2020</p>
                   <h3 className="stories-section__title">
@@ -468,7 +814,29 @@ export default function Stories() {
 
             {/* Item 16 */}
             <div className="stories-section__item">
-              <a href="#" className="stories-section__item-16">
+              <a href="#" className="stories-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/land-of-dreams.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/stories/tablet/land-of-dreams.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/land-of-dreams.jpg"
+                    alt="Image of a small church near snowy mountain."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="stories-section__item-wrapper">
                   <p className="stories-section__date">February 25th 2020</p>
                   <h3 className="stories-section__title">Land of Dreams</h3>

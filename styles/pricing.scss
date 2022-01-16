@@ -56,14 +56,20 @@
 
   // Pricing Image
   &__img {
-    background: url("../public/assets/pricing/desktop/hero.jpg") no-repeat
-      center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     grid-column: 9 / 19;
     grid-row: 1 / 2;
+
+    picture {
+      width: 100%;
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
   }
 }
 

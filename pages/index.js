@@ -51,8 +51,10 @@ export default function Home() {
                   <a>
                     <img
                       className="header__logo-img"
-                      src="/assets/logo.svg"
+                      src="assets/logo.svg"
                       alt="Header Logo"
+                      width="100"
+                      height="30"
                     />
                   </a>
                 </Link>
@@ -147,6 +149,23 @@ export default function Home() {
               {/* Top Image */}
               <div className="top-section__img">
                 <div className="top-section__colored-bar-img"></div>
+
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/home/mobile/create-and-share.jpg"
+                  />
+
+                  <source
+                    media="(max-width:900px)"
+                    srcSet="assets/home/tablet/create-and-share.jpg"
+                  />
+
+                  <img
+                    src="assets/home/desktop/create-and-share.jpg"
+                    alt="Man standing in front of lake"
+                  />
+                </picture>
               </div>
             </div>
           </div>
@@ -156,7 +175,24 @@ export default function Home() {
         <section className="story-template">
           <div className="story-template__wrapper">
             {/* Story Image */}
-            <div className="story-template__img"></div>
+            <div className="story-template__img">
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcSet="assets/home/mobile/beautiful-stories.jpg"
+                />
+
+                <source
+                  media="(max-width:900px)"
+                  srcSet="assets/home/tablet/beautiful-stories.jpg"
+                />
+
+                <img
+                  src="assets/home/desktop/beautiful-stories.jpg"
+                  alt="Open laptop with books in the backgrounds"
+                />
+              </picture>
+            </div>
 
             {/* Story Info */}
             <div className="story-template__info">
@@ -210,7 +246,24 @@ export default function Home() {
             </div>
 
             {/* Design Image */}
-            <div className="design-section__img"></div>
+            <div className="design-section__img">
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcSet="assets/home/mobile/designed-for-everyone.jpg"
+                />
+
+                <source
+                  media="(max-width:900px)"
+                  srcSet="assets/home/tablet/designed-for-everyone.jpg"
+                />
+
+                <img
+                  src="assets/home/desktop/designed-for-everyone.jpg"
+                  alt="Man holding a camera."
+                />
+              </picture>
+            </div>
           </div>
         </section>
 
@@ -219,7 +272,24 @@ export default function Home() {
           <div className="story-section__wrapper">
             {/* Item 1 */}
             <div className="story-section__item">
-              <a href="#" className="story-section__item-1">
+              <a href="#" className="story-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/mountains.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/mountains.jpg"
+                    alt="Mountain View."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="story-section__item-wrapper">
                   <h3 className="story-section__title">The Mountains</h3>
                   <p className="story-section__name">by John Appleseed</p>
@@ -239,7 +309,24 @@ export default function Home() {
 
             {/* Item 2 */}
             <div className="story-section__item">
-              <a href="#" className="story-section__item-2">
+              <a href="#" className="story-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/cityscapes.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/cityscapes.jpg"
+                    alt="A view of beautiful city."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="story-section__item-wrapper">
                   <h3 className="story-section__title">Sunset Cityscapes</h3>
                   <p className="story-section__name">by Benjamin Cruz</p>
@@ -259,7 +346,24 @@ export default function Home() {
 
             {/* Item 3 */}
             <div className="story-section__item">
-              <a href="#" className="story-section__item-3">
+              <a href="#" className="story-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/18-days-voyage.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/18-days-voyage.jpg"
+                    alt="Man hitch-hiking."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="story-section__item-wrapper">
                   <h3 className="story-section__title">18 Days Voyage</h3>
                   <p className="story-section__name">by Alexei Borodin</p>
@@ -279,7 +383,24 @@ export default function Home() {
 
             {/* Item 4 */}
             <div className="story-section__item ">
-              <a href="#" className="story-section__item-4">
+              <a href="#" className="story-section__item-img">
+                {/* Gradient */}
+                <div className="story-section__gradient"></div>
+
+                {/* Images */}
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcSet="assets/stories/mobile/architecturals.jpg"
+                  />
+
+                  <img
+                    src="assets/stories/desktop/architecturals.jpg"
+                    alt="A beautiful architectural building."
+                  />
+                </picture>
+
+                {/* Info */}
                 <div className="story-section__item-wrapper">
                   <h3 className="story-section__title">Architecturals</h3>
                   <p className="story-section__name">by Samantha Brooke</p>
@@ -374,6 +495,24 @@ export default function Home() {
                       alt="Footer logo"
                     />
                   </a>
+                </Link>
+              </div>
+
+              <div className="footer__left-nav">
+                <Link href="/">
+                  <a className="footer__left-nav-link">Home</a>
+                </Link>
+
+                <Link href="/stories">
+                  <a className="footer__left-nav-link">Stories</a>
+                </Link>
+
+                <Link href="/features">
+                  <a className="footer__left-nav-link">Features</a>
+                </Link>
+
+                <Link href="/pricing">
+                  <a className="footer__left-nav-link">Pricing</a>
                 </Link>
               </div>
 

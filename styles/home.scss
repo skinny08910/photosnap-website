@@ -89,14 +89,20 @@
 
   // Top Image
   &__img {
-    background: url("../public/assets/home/desktop/create-and-share.jpg")
-      no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     grid-column: 9 / 19;
     grid-row: 1 / 2;
+
+    picture {
+      width: 100%;
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
   }
 }
 
@@ -168,14 +174,20 @@
 
   // Story Template Image
   &__img {
-    background: url("../public/assets/home/desktop/beautiful-stories.jpg")
-      no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     grid-column: 1 / 14;
     grid-row: 1 / 2;
+
+    picture {
+      width: 100%;
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
   }
 }
 
@@ -246,14 +258,20 @@
 
   // Design Image
   &__img {
-    background: url("../public/assets/home/desktop/designed-for-everyone.jpg")
-      no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     grid-column: 9 / 19;
     grid-row: 1 / 2;
+
+    picture {
+      width: 100%;
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
   }
 }
 
@@ -266,9 +284,21 @@
     background-color: #fff;
   }
 
+  &__gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: linear-gradient(
+      170deg,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+  }
+
   // Story Item
   &__item {
-    & a {
+    &-img {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -287,74 +317,29 @@
       }
     }
 
-    // Item 1
-    &-1 {
-      display: block;
-      background: rgb(255, 255, 255);
-      background: linear-gradient(
-          170deg,
-          rgba(0, 0, 0, 0) 20%,
-          rgba(0, 0, 0, 0.7) 100%
-        ),
-        url("../public/assets/stories/desktop/mountains.jpg") no-repeat center
-          center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+    &-img {
       height: 600px;
-    }
+      position: relative;
 
-    // Item 2
-    &-2 {
-      display: block;
-      background: linear-gradient(
-          170deg,
-          rgba(0, 0, 0, 0) 20%,
-          rgba(0, 0, 0, 0.7) 100%
-        ),
-        url("../public/assets/stories/desktop/cityscapes.jpg") no-repeat center
-          center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      height: 600px;
-    }
+      picture {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
 
-    // Item 3
-    &-3 {
-      display: block;
-      background: linear-gradient(
-          170deg,
-          rgba(0, 0, 0, 0) 20%,
-          rgba(0, 0, 0, 0.7) 100%
-        ),
-        url("../public/assets/stories/desktop/18-days-voyage.jpg") no-repeat
-          center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      height: 600px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
     }
+  }
 
-    // Item 4
-    &-4 {
-      display: block;
-      background: linear-gradient(
-          170deg,
-          rgba(0, 0, 0, 0) 20%,
-          rgba(0, 0, 0, 0.7) 100%
-        ),
-        url("../public/assets/stories/desktop/architecturals.jpg") no-repeat
-          center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      height: 600px;
-    }
+  &__item-wrapper {
+    position: relative;
+    z-index: 10;
   }
 
   &__title {
@@ -414,6 +399,7 @@
       rgba(90, 119, 255, 1) 100%
     );
     position: relative;
+    z-index: 10;
     opacity: 0;
     transition: all 0.3s ease-in-out;
   }
@@ -464,6 +450,312 @@
 }
 
 /******************************** Media Queries ********************************/
+
+/* Laptop ********************************/
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  /******** Top Section */
+  .top-section {
+    &__colored-bar-img {
+      display: none;
+    }
+
+    &__colored-bar {
+      height: 45%;
+    }
+
+    &__info {
+      grid-column: 2/9;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  /******** Story Template Section */
+  .story-template {
+    &__info {
+      grid-column: 15 / 22;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  /******** Design Section */
+  .design-section {
+    &__info {
+      grid-column: 2/9;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  /******** Story Section */
+  .story-section {
+    &__item-img {
+      height: 500px;
+    }
+  }
+
+  /******** Features Section */
+  .features-section {
+    padding: 5em 0;
+
+    &__img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+/* iPad Pro ********************************/
+@media only screen and (min-width: 901px) and (max-width: 1180px) {
+  /******** Top Section */
+  .top-section {
+    &__colored-bar-img {
+      display: none;
+    }
+
+    &__info {
+      grid-column: 2/11;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    a:hover {
+      .top-section__button {
+        border-bottom: 1px solid transparent;
+      }
+
+      .top-section__right-arrow {
+        margin-left: 1em;
+      }
+    }
+
+    &__img {
+      grid-column: 12/19;
+    }
+  }
+
+  /******** Story Template Section */
+  .story-template {
+    &__info {
+      grid-column: 10 / 20;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    a:hover {
+      .story-template__button {
+        border-bottom: 1px solid transparent;
+      }
+
+      .story-template__right-arrow {
+        margin-left: 1em;
+      }
+    }
+
+    &__img {
+      grid-column: 1 / 9;
+    }
+  }
+
+  /******** Design Section */
+  .design-section {
+    &__info {
+      grid-column: 2/11;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    a:hover {
+      .design-section__button {
+        border-bottom: 1px solid transparent;
+      }
+
+      .design-section__right-arrow {
+        margin-left: 1em;
+      }
+    }
+
+    &__img {
+      grid-column: 12/19;
+    }
+  }
+
+  /******** Story Section */
+  .story-section {
+    &__item a:hover {
+      transform: translate3d(0, 0, 0);
+
+      .story-section__border-bottom {
+        display: none;
+      }
+
+      .story-section__item-wrapper {
+        margin-bottom: 3.5rem;
+      }
+    }
+  }
+
+  /******** Features Section */
+  .features-section {
+    &__item {
+      width: 100%;
+    }
+
+    &__img {
+      width: 90px;
+      height: 90px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 6em;
+    }
+  }
+}
+
+/* Tablet/iPad ********************************/
+@media only screen and (max-width: 900px) {
+  /******** Top Section */
+  .top-section {
+    &__colored-bar-img {
+      display: none;
+    }
+
+    &__info {
+      grid-column: 2/11;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    a:hover {
+      .top-section__button {
+        border-bottom: 1px solid transparent;
+      }
+
+      .top-section__right-arrow {
+        margin-left: 1em;
+      }
+    }
+
+    &__img {
+      grid-column: 12/19;
+    }
+  }
+
+  /******** Story Template Section */
+  .story-template {
+    &__info {
+      grid-column: 10 / 20;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    a:hover {
+      .story-template__button {
+        border-bottom: 1px solid transparent;
+      }
+
+      .story-template__right-arrow {
+        margin-left: 1em;
+      }
+    }
+
+    &__img {
+      grid-column: 1 / 9;
+    }
+  }
+
+  /******** Design Section */
+  .design-section {
+    &__info {
+      grid-column: 2/11;
+    }
+
+    &__info-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    a:hover {
+      .design-section__button {
+        border-bottom: 1px solid transparent;
+      }
+
+      .design-section__right-arrow {
+        margin-left: 1em;
+      }
+    }
+
+    &__img {
+      grid-column: 12/19;
+    }
+  }
+
+  /******** Story Section */
+  .story-section {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item a:hover {
+      transform: translate3d(0, 0, 0);
+
+      .story-section__border-bottom {
+        display: none;
+      }
+
+      .story-section__item-wrapper {
+        margin-bottom: 3.5rem;
+      }
+    }
+  }
+
+  /******** Features Section */
+  .features-section {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__img {
+      width: 90px;
+      height: 90px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 6em;
+    }
+  }
+}
+
 /* Phone ********************************/
 @media only screen and (max-width: 700px) {
   /******** Top Section */
